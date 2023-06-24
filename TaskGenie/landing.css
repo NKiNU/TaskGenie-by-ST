@@ -1,0 +1,358 @@
+/*.bg-body-tertiary {
+  background-color: #f8f9fa!important;
+}
+*/
+@media (min-width: 992px){
+  .navbar li {
+      margin-left : 1em;
+      margin-right : 1em;
+
+  }
+}
+
+  .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar-brand {
+    color: white;
+  }
+
+span {
+  display: inline-block;
+
+}
+
+.fireworks  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+background:#1e1f23 ;
+}
+
+/* Clock */
+ :root {
+	--main-bg-color: #fff;
+	--main-text-color: #888888;
+}
+
+[data-theme="dark"] {
+  --main-bg-color: #1e1f26;
+  --main-text-color: #888888;
+}
+
+.light-theme {
+  --main-bg-color: #fff;
+  --main-text-color: #888888;
+}
+
+
+* {
+	box-sizing: border-box;
+	transition: all ease 0.2s; 
+}
+
+.clockcontainer {
+  position: relative;
+	margin: 0;
+	height: 65vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+	transition: all ease 0.2s;
+
+
+}
+.page-header {
+	font-size: 2rem;
+	color: var(--main-text-color);
+	padding: 2rem 0;
+	font-family: monospace;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	transition: all ease 0.2s;
+}
+
+.clock {
+	min-height: 18em;
+	min-width: 18em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--main-bg-color);
+	background-image: url("https://imvpn22.github.io/analog-clock/clock.png");
+	background-position: center center;
+	background-size: cover;
+	border-radius: 50%;
+	border: 4px solid var(--main-bg-color);
+	box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+		inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
+		inset 0 15px 15px rgba(0, 0, 0, 0.3);
+	transition: all ease 0.2s;
+}
+.clock:before {
+	content: "";
+	height: 0.75rem;
+	width: 0.75rem;
+	background-color: var(--main-text-color);
+	border: 2px solid var(--main-bg-color);
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1000;
+	transition: all ease 0.2s;
+}
+.hour,
+.min,
+.sec {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+}
+.hour {
+	height: 10em;
+	width: 10em;
+}
+.hour:before {
+	content: "";
+	position: absolute;
+	height: 50%;
+	width: 6px;
+	background-color: var(--main-text-color);
+	border-radius: 6px;
+}
+.min {
+	height: 12em;
+	width: 12em;
+}
+.min:before {
+	content: "";
+	height: 50%;
+	width: 4px;
+	background-color: var(--main-text-color);
+	border-radius: 4px;
+}
+.sec {
+	height: 13em;
+	width: 13em;
+}
+.sec:before {
+	content: "";
+	height: 60%;
+	width: 2px;
+	background-color: #f00;
+	border-radius: 2px;
+}
+
+/* Style for theme switch btn */
+.switch-cont {
+	margin: 2em auto;
+	position: relative;
+	bottom: 0;
+}
+.switch-cont .switch-btn {
+	font-family: monospace;
+	text-transform: uppercase;
+	outline: none;
+	padding: 0.5rem 1rem;
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+	border: 1px solid var(--main-text-color);
+	border-radius: 0.25rem;
+	cursor: pointer;
+	transition: all ease 0.3s;
+}
+
+/* Animate css*/
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 160px;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+  margin-bottom: 1cm;
+}
+.content__container {
+  margin:auto;
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.content__container:before {
+  content: '[';
+  left: 0;
+}
+.content__container:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+}
+.content__container:after, .content__container:before {
+  position: absolute;
+  top: 0;
+  color: #16a085;
+  font-size: 42px;
+  line-height: 40px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+.content__container__list {
+  margin-top: 0;
+  padding-left: 160px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+ }
+  50% {
+    opacity: 1;
+ }
+}
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+ }
+  16.66%, 29.32% {
+    transform: translate3d(0, -32%, 0);
+ }
+  33.32%, 45.98% {
+    transform: translate3d(0, -64%, 0);
+ }
+  49.98%, 62.64% {
+    transform: translate3d(0, -64%, 0);
+ }
+  66.64%, 79.3% {
+    transform: translate3d(0, -32%, 0);
+ }
+  83.3%, 95.96% {
+    transform: translate3d(0, 0, 0);
+ }
+}
+@-o-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+ }
+  50% {
+    opacity: 1;
+ }
+}
+@-o-keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+ }
+  16.66%, 29.32% {
+    transform: translate3d(0, -32%, 0);
+ }
+  33.32%, 45.98% {
+    transform: translate3d(0, -64%, 0);
+ }
+  49.98%, 62.64% {
+    transform: translate3d(0, -64%, 0);
+ }
+  66.64%, 79.3% {
+    transform: translate3d(0, -32%, 0);
+ }
+  83.3%, 95.96% {
+    transform: translate3d(0, 0, 0);
+ }
+}
+@-moz-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+ }
+  50% {
+    opacity: 1;
+ }
+}
+@-moz-keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+ }
+  16.66%, 29.32% {
+    transform: translate3d(0, -32%, 0);
+ }
+  33.32%, 45.98% {
+    transform: translate3d(0, -64%, 0);
+ }
+  49.98%, 62.64% {
+    transform: translate3d(0, -64%, 0);
+ }
+  66.64%, 79.3% {
+    transform: translate3d(0, -32%, 0);
+ }
+  83.3%, 95.96% {
+    transform: translate3d(0, 0, 0);
+ }
+}
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+ }
+  50% {
+    opacity: 1;
+ }
+}
+@keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+ }
+  16.66%, 29.32% {
+    transform: translate3d(0, -32%, 0);
+ }
+  33.32%, 45.98% {
+    transform: translate3d(0, -64%, 0);
+ }
+  49.98%, 62.64% {
+    transform: translate3d(0, -64%, 0);
+ }
+  66.64%, 79.3% {
+    transform: translate3d(0, -32%, 0);
+ }
+  83.3%, 95.96% {
+    transform: translate3d(0, 0, 0);
+ }
+}
+
+.priorityChart{
+  width: auto;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

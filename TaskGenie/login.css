@@ -1,0 +1,31 @@
+/* SECTION CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+body{
+     background: #f5f5f7;
+}
+.row{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px darkslategray;
+}
+img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.button1{
+    border: 1px solid;
+    
+    outline: none;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold;
+}
+/* SECTION CSS */

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Side Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="main-container d-flex">
+        <input type="checkbox" id="toggle" class="toggle-input">
+        <label for="toggle" class="toggle-label"><i class="fal fa-bars"></i></label>
+
+        <div class="sidebar" id="side_nav">
+            <ul class="list-unstyled px-2">
+                <li class="active"><a href="dashboard.html" class="text-decoration-none px-3 py-2 d-block"><i
+                            class="fal fa-home"></i> Dashboard</a></li>
+                <li class=""><a href="task.html" class="text-decoration-none px-3 py-2 d-block"><i
+                            class="fal fa-list"></i> Tasks</a></li>
+            </ul>
+            <hr class="h-color mx-2">
+            <ul class="list-unstyled px-2 mx-auto">
+                <li class=""><a href="profile.html" class="text-decoration-none px-3 py-2 d-block"><i
+                            class="fal fa-user">
+                        </i> User Profile</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <nav class="navbar navbar-expand-md">
+                <div class="d-flex justify-content-between d-md-none d-block">
+                    <label for="toggle" class="btn px-1 py-0 open-btn me-2"><i class="fal fa-bars"></i></label>
+                    <a class="navbar-brand fs-4" href="#"><span
+                            class="bg-dark rounded px-2 py-0 text-white">TaskGenie</span></a>
+                </div>
+
+                <h1 class="mx-auto">Dashboard</h1>
+            </nav>
+            <!-- Content area -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

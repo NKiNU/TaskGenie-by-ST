@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reminder</title>
+
+</head>
+<body>
+    <div class="main-container d-flex">
+        <div class="sidebar" id="side_nav">
+            <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
+                <h1 class="fs-4"><span class="bg-white text-dark rounded shadow px-2 me-2">TGNIE</span>
+                    <span class="text-white">TaskGenie.</span></h1>
+                <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i
+                        class="fal fa-stream"></i></button>
+            </div>
+            <div>
+
+            <ul class="list-unstyled px-2">
+                <li class=""><a href="index.html" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-home"></i> Dashboard</a></li>
+                <li class=""><a href="Task2.html" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-list"></i> Tasks</a></li>
+                <li class="active"><a href="reminders.html" class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between">
+                <span><i class="fal fa-comment"></i> Reminders</span>
+                <span class="bg-dark rounded-pill text-white py-0 px-2" id="number_of_noty"></span>
+                </a></li>
+            </ul>
+            <hr class="h-color mx-2">
+            <ul class="list-unstyled px-2 mx-auto">
+                <li class=""><a href="profile.html" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-user">
+                </i> User Profile</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="content d-flex flex-column" id="backgroundxc">
+            <nav class="navbar navbar-expand-md" id="backgroundxc">
+                <div class="container-fluid" id="backgroundxc">
+                    <div class="d-flex justify-content-between d-md-none d-block">
+                     <button class="btn px-1 py-0 open-btn me-2"><i class="fal fa-bars"></i></button>
+                        <a class="navbar-brand fs-4" href="#"><span class="bg-dark rounded px-2 py-0 text-white">NGTR</span></a>
+                       
+                    </div>
+                    
+                    <h1 class="mx-auto">Reminders</h1>
+                    <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fal fa-bars"></i>
+                    </button>
+                    
+                </div>
+            </nav>
+
+            <div class="container mx-auto flex-fill p-5" >
+                
+                <div class="callout callout-danger">
+                    <h3 style="border-left: 5px solid red; padding-left: 10px;">List of Reminders</h3>
+                </div>
+
+                <div class="container mt-2">
+                    <table id="reminder-table" class="table">
+                      <thead>
+                        <tr>
+                          <th>Task</th>
+                          <th>Due Date</th>
+                          <th>Priority</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+
+                  <div class="callout callout-warning mt-4">
+                    <h3 style="border-left: 5px solid yellow; padding-left: 10px;">Set a Reminder</h3>
+                  </div>
+                  
+                  <div class="container">
+                    <form  id="new-reminder-form">
+                      <div class="form-group">
+                        <label for="task">Task</label>
+                        <input type="text" class="form-control" id="task-input" placeholder="Enter task name">
+                      </div>
+                      <div class="form-group">
+                        <label for="dueDate">Due Date</label>
+                        <input type="date" class="form-control" id="due-date-input">
+                      </div>
+                      <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select class="form-control" id="priority-input">
+                          <option>Low</option>
+                          <option>Medium</option>
+                          <option>High</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Add Reminder</button>
+                    </form>
+                  </div>
+                  
+                  
+ 
+            </div>
+
+            <hr class="my-2">
+            <footer class="mt-auto"><i>
+              <div class="text-center">Copyright &copy; 2023 TGNIE TaskGenie.<br>
+              <a href="mailto:sakittekakST@yourlastname.com">sakittekakST@yourlastname.com<br></a>
+              </div></i></footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

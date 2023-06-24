@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url("To do\images\backgroundNgatur.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+
+.wrapper1 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.wrapper2{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+.wrapper3 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.container1 {
+  width: 200px;
+  height: 200px;
+}
+
+.background-circle {
+  /* width = container's size (200px) - ( 2 * svg's stroke-width (24px) ) .
+        Increase a little bit */
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  margin: 26px;
+  position: absolute;
+  
+}
+
+.foreground-circle {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* To start the svg circle from the top */
+  transform: rotate(-90deg);
+
+  /* To center it inside the container */
+  position: absolute;
+  margin: 10px;
+}
+
+.foreground-circle svg circle {
+  /* stroke-dasharray = 2 * (22/7) * svg's radius value (90px)*/
+  stroke-dasharray: 566;
+}
+
+.text-inside-circle {
+  width: 100%;
+  height: 115%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+#tic2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+#number-inside-circle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0%;
+}
+
+#number-inside-circle1{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0%;
+}
+
+#number-inside-circle2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0%;
+}
+.remaining-text {
+  font-weight: 400;
+  font-size: 12px;
+  padding: auto;
+
+}
+
+.button-click {
+  background-color: #50c878;
+  border: 1px solid transparent;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  color: whitesmoke;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* To prevent svg border being cut off */
+svg:not(:root) {
+  overflow: visible;
+}
+
+#progresschart{
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+#col1{
+    text-align: 200px;
+}
+
+.my-2 {
+  margin-top: 3.5rem !important;
+  margin-bottom: .5rem !important;
+}
